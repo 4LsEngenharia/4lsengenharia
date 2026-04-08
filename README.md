@@ -18,7 +18,7 @@
       --border:rgba(212,175,55,.25);
       --shadow: 0 20px 60px rgba(0,0,0,.55);
     }
-
+    
     *{
       margin:0;
       padding:0;
