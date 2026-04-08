@@ -543,7 +543,7 @@
         </div>
 
         <div class="hero-card">
-          <h3>Diferenciais da 4LS</h3>
+          <h3>Diferenciais da 4L's</h3>
           <ul>
             <li><span class="dot"></span> Atendimento rápido e personalizado</li>
             <li><span class="dot"></span> Compromisso com qualidade e segurança</li>
