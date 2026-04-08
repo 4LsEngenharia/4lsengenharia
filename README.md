@@ -2,9 +2,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>4LS Engenharia | Engenharia e Empreendimentos Elétricos</title>
+  <title>4L's Engenharia | Engenharia e Empreendimentos Elétricos</title>
 
-  <meta name="description" content="4LS Engenharia - Engenharia e Empreendimentos Elétricos. Serviços técnicos e operacionais com qualidade, compromisso e parceria." />
+  <meta name="description" content="4L's Engenharia - Engenharia e Empreendimentos Elétricos. Serviços técnicos e operacionais com qualidade, compromisso e parceria." />
 
   <style>
     :root{
@@ -491,9 +491,9 @@
       <div class="nav">
 
         <div class="logo-area">
-          <img src="logo.png" class="logo-img" alt="Logo 4LS Engenharia">
+          <img src="logo.png" class="logo-img" alt="Logo 4L's Engenharia">
           <div class="logo-text">
-            <strong>4LS ENGENHARIA</strong>
+            <strong>4L's ENGENHARIA</strong>
             <span>Engenharia e Empreendimentos Elétricos</span>
           </div>
         </div>
@@ -526,7 +526,7 @@
           </h1>
 
           <p>
-            A <strong>4LS Engenharia</strong> atua com excelência em serviços de engenharia e atividades operacionais,
+            A <strong>4L's Engenharia</strong> atua com excelência em serviços de engenharia e atividades operacionais,
             oferecendo suporte completo, agilidade e compromisso com prazos e qualidade.
           </p>
 
@@ -602,7 +602,7 @@
   <!-- SOBRE -->
   <section id="sobre">
     <div class="container">
-      <h2 class="title">Sobre a 4LS Engenharia</h2>
+      <h2 class="title">Sobre a 4L's Engenharia</h2>
       <p class="subtitle">
         Uma empresa comprometida em entregar soluções com excelência, segurança e confiança para seus clientes.
       </p>
@@ -611,7 +611,7 @@
         <div class="about-box">
           <h3>Quem Somos</h3>
           <p>
-            A <strong>4LS Engenharia</strong> oferece soluções em engenharia e empreendimentos elétricos,
+            A <strong>4L's Engenharia</strong> oferece soluções em engenharia e empreendimentos elétricos,
             atendendo demandas técnicas e operacionais com responsabilidade e qualidade.
           </p>
           <p>
@@ -712,7 +712,7 @@
   <footer>
     <div class="container">
       <p>
-        © 2026 - 4LS Engenharia. Todos os direitos reservados.<br>
+        © 2026 - 4L's Engenharia. Todos os direitos reservados.<br>
         CNPJ: 60.943.647/0001-89 | Rua Olegário Augusto Viana, Nº 458<br>
         Instagram: @4lsengenharia | E-mail: 4lsengenharia@gmail.com
       </p>
