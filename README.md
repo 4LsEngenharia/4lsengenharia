@@ -480,6 +480,59 @@
         font-size:34px;
       }
     }
+    whatsapp-container{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  z-index:9999;
+}
+
+.whatsapp-main{
+  background: linear-gradient(135deg, #d4af37, #f2d675);
+  border:none;
+  border-radius:50%;
+  width:60px;
+  height:60px;
+  font-size:24px;
+  cursor:pointer;
+  box-shadow:0 10px 30px rgba(0,0,0,.4);
+  transition:0.3s;
+}
+
+.whatsapp-main:hover{
+  transform: scale(1.1);
+}
+
+.whatsapp-options{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  margin-bottom:10px;
+  opacity:0;
+  transform: translateY(20px);
+  pointer-events:none;
+  transition:0.3s;
+}
+
+.whatsapp-options.active{
+  opacity:1;
+  transform: translateY(0);
+  pointer-events:auto;
+}
+
+.whatsapp-options a{
+  background:#111;
+  color:#fff;
+  padding:10px 14px;
+  border-radius:12px;
+  font-size:14px;
+  text-decoration:none;
+  border:1px solid rgba(212,175,55,.3);
+}
+
+.whatsapp-options a:hover{
+  background:#1a1a1a;
+}
   </style>
 </head>
 
@@ -720,9 +773,18 @@
   </footer>
 
   <!-- BOTÃO WHATSAPP -->
-  <a class="whatsapp-float" target="_blank" href="https://wa.me/5577999158488">
-    💬 WhatsApp
-  </a>
+<div class="whatsapp-container">
+  
+  <div class="whatsapp-options" id="whatsOptions">
+    <a href="#" onclick="abrirWhats('comercial')">📞 Comercial</a>
+    <a href="#" onclick="abrirWhats('suporte')">🛠️ Suporte</a>
+  </div>
+
+  <button class="whatsapp-main" onclick="toggleWhats()">
+    💬
+  </button>
+
+</div>
 
   <script>
     function toggleMenu(){
@@ -750,6 +812,35 @@ ${mensagem}`;
 
       window.open(link, "_blank");
     }
+    function toggleWhats(){
+  const menu = document.getElementById("whatsOptions");
+  menu.classList.toggle("active");
+}
+
+function abrirWhats(tipo){
+  let numero = "";
+  let mensagem = "";
+
+  const hora = new Date().getHours();
+  const dentroHorario = (hora >= 8 && hora <= 18);
+
+  if(tipo === "comercial"){
+    numero = "5577999158488";
+    mensagem = dentroHorario
+      ? "Olá! Gostaria de falar com o setor comercial."
+      : "Olá! Entrei em contato fora do horário comercial. Aguardo retorno.";
+  }
+
+  if(tipo === "suporte"){
+    numero = "5577981441536";
+    mensagem = dentroHorario
+      ? "Olá! Preciso de suporte técnico."
+      : "Olá! Preciso de suporte, mas estou fora do horário. Aguardo retorno.";
+  }
+
+  const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+  window.open(link, "_blank");
+}
   </script>
 
 </body>
