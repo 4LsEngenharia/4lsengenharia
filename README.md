@@ -2,10 +2,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title><meta name="description" content="4LS Engenharia em Brumado Bahia. Serviços de engenharia com qualidade." />
-<meta name="keywords" content="engenharia em Brumado, manutenção, elétrica, 4LS Engenharia" />
-<meta name="author" content="4LS Engenharia">
-<meta name="robots" content="index, follow">/title>
+  <title>4L's Engenharia | Engenharia e Empreendimentos Elétricos</title>
 
   <meta name="description" content="4L's Engenharia - Engenharia e Empreendimentos Elétricos. Serviços técnicos e operacionais com qualidade, compromisso e parceria." />
 
