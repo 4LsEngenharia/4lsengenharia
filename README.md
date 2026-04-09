@@ -732,7 +732,8 @@
           <p>Entre em contato conosco pelos canais abaixo:</p>
 
           <div class="contact-info">
-            <span><strong style="color:var(--gold2);">WhatsApp:</strong> (77) 99915-8488</span>
+            <span><strong>Comercial 1:</strong> (77) 99915-8488</span>
+<span><strong>Comercial 2:</strong> (77) 98144-1536</span>
             <span><strong style="color:var(--gold2);">E-mail:</strong> 4lsengenharia@gmail.com</span>
             <span><strong style="color:var(--gold2);">Endereço:</strong> Rua Olegário Augusto Viana, Nº 458</span>
             <span><strong style="color:var(--gold2);">Instagram:</strong> @4lsengenharia</span>
@@ -776,8 +777,8 @@
 <div class="whatsapp-container">
   
   <div class="whatsapp-options" id="whatsOptions">
-    <a href="#" onclick="abrirWhats('comercial')">📞 Comercial</a>
-    <a href="#" onclick="abrirWhats('suporte')">🛠️ Suporte</a>
+    <a href="#" onclick="abrirWhats('leonardo')">📞 Comercial - Leonardo</a>
+    <a href="#" onclick="abrirWhats('luan')">📞 Comercial - Luan</a>
   </div>
 
   <button class="whatsapp-main" onclick="toggleWhats()">
@@ -787,31 +788,6 @@
 </div>
 
   <script>
-    function toggleMenu(){
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("active");
-    }
-
-    function enviarWhats(event){
-      event.preventDefault();
-
-      const nome = document.getElementById("nome").value;
-      const empresa = document.getElementById("empresa").value;
-      const telefone = document.getElementById("telefone").value;
-      const mensagem = document.getElementById("mensagem").value;
-
-      const texto = `Olá! Me chamo ${nome}.
-Empresa: ${empresa}
-Telefone: ${telefone}
-
-Gostaria de solicitar orçamento:
-${mensagem}`;
-
-      const numeroWhats = "5577999158488";
-      const link = `https://wa.me/${numeroWhats}?text=${encodeURIComponent(texto)}`;
-
-      window.open(link, "_blank");
-    }
     function toggleWhats(){
   const menu = document.getElementById("whatsOptions");
   menu.classList.toggle("active");
@@ -824,18 +800,20 @@ function abrirWhats(tipo){
   const hora = new Date().getHours();
   const dentroHorario = (hora >= 8 && hora <= 18);
 
-  if(tipo === "comercial"){
+  if(tipo === "leonardo"){
     numero = "5577999158488";
+
     mensagem = dentroHorario
-      ? "Olá! Gostaria de falar com o setor comercial."
-      : "Olá! Entrei em contato fora do horário comercial. Aguardo retorno.";
+      ? "Olá Leonardo! Gostaria de falar com o setor comercial da 4LS Engenharia."
+      : "Olá Leonardo! Entrei em contato fora do horário. Aguardo retorno.";
   }
 
-  if(tipo === "suporte"){
+  if(tipo === "luan"){
     numero = "5577981441536";
+
     mensagem = dentroHorario
-      ? "Olá! Preciso de suporte técnico."
-      : "Olá! Preciso de suporte, mas estou fora do horário. Aguardo retorno.";
+      ? "Olá Luan! Gostaria de falar com o setor comercial da 4LS Engenharia."
+      : "Olá Luan! Entrei em contato fora do horário. Aguardo retorno.";
   }
 
   const link = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
